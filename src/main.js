@@ -19,7 +19,8 @@ createApp(App).use(store).use(router)
         domain: "dev-m3qfrwppz0adiawl.us.auth0.com",
         clientId: "IDWsApPE93va3TGNTFHczLkSvm9Jmcdg",
         authorizationParams: {
-            redirect_uri: window.location.origin
+            redirect_uri: window.location.origin,
+            audience: "localhost:8080/api",
         }
     })
 )
