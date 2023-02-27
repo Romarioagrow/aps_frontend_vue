@@ -20,11 +20,8 @@
     <v-btn :rounded="0" height="100%" @click="goToView('/gallery')" style="font-family: 'Osiris'">
       Gallery
     </v-btn>
-    <v-btn v-if="true" height="100%" :rounded="0" @click="goToView('/account')" style="font-family: 'Osiris'">
-      UserAccount
-    </v-btn>
-    <v-btn v-if="true" height="100%" :rounded="0" @click="goToView('/login')" style="font-family: 'Osiris'">
-      Login
+    <v-btn height="100%" :rounded="0" @click="goToView('/account')" style="font-family: 'Osiris'">
+      PROFILE
     </v-btn>
     <v-btn :rounded="0" height="100%" color="secondary" @click="goToView('/start')" style="font-family: 'Osiris'" >
       START NOW

@@ -1,7 +1,7 @@
 
 
 <template>
-  <v-app style="background-color: black">
+  <v-app style="background-color: white">
     <NavDrawer></NavDrawer>
     <v-main>
       <router-view></router-view>
