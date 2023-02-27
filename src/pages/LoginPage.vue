@@ -12,6 +12,7 @@
         class="mt-5"
     >
       <v-row>
+        <LoginForm/>
         <v-text-field
             v-model="login_username"
             :counter="10"
@@ -146,7 +147,12 @@
 </template>
 
 <script>
+
+import LoginForm from "@/components/LoginForm.vue";
+
+
 export default {
+  components: {LoginForm},
   name: "LoginPage",
   data() {
     return {
