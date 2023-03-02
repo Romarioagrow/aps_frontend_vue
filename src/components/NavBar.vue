@@ -4,7 +4,7 @@
       prominent
       flat
       app
-      :image="require('../assets/grid_0ddd (6).png')"
+      :image="require('../assets/nav-bar-background.png')"
   >
     <v-btn :rounded="0" height="100%" color="aliceblue" @click="goToView('/')" style="font-family: 'Discopia Regular'; font-size: 25px; margin-right: 12%;" >
       APOSFERA SPACETRIPS
