@@ -19,21 +19,8 @@
 
 <script>
 import NavBar from "@/components/NavBar";
-
 export default {
   components: {NavBar},
-
-  data() {
-    return {
-      state: {
-        csrf: "",
-        username: "",
-        password: "",
-        error: "",
-        isAuthenticated: false,
-      }
-    }
-  },
 }
 </script>
 
@@ -41,7 +28,7 @@ export default {
 @font-face {
   font-family: "Discopia Regular";
   src: local("Discopia Regular"),
-  url(./fonts/Discopia Regular.ttf) format("truetype");
+  url(./fonts/DiscopiaRegular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Osiris";
