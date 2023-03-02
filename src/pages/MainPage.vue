@@ -53,7 +53,7 @@ import NavDrawer from "@/components/NavBar";
 import PicSlider from "@/components/PicSlider";
 export default {
   name: "MainPage",
-  components: {NavDrawer ,PicSlider}
+  components: {PicSlider}
 }
 </script>
 
