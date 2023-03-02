@@ -1,6 +1,6 @@
 <template>
   <v-app style="background-color: black">
-    <NavDrawer></NavDrawer>
+    <NavBar></NavBar>
     <v-main>
       <router-view></router-view>
     </v-main>
@@ -18,10 +18,10 @@
 </style>
 
 <script>
-import NavDrawer from "@/components/NavBar";
+import NavBar from "@/components/NavBar";
 
 export default {
-  components: {NavDrawer},
+  components: {NavBar},
 
   data() {
     return {
@@ -34,44 +34,6 @@ export default {
       }
     }
   },
-
-  created() {
-    this.getSession()
-  },
-  methods: {
-    getCSRF () {
-      fetch("http://localhost:8000/api/csrf/", {
-        credentials: "include",
-      })
-          .then((res) => {
-            let csrfToken = res.headers.get("X-CSRFToken")
-            this.$store.dispatch('setCSRF', csrfToken)
-            console.log(csrfToken)
-          })
-          .catch((err) => {
-            console.log(err)
-          });
-    },
-
-    getSession () {
-      fetch("http://localhost:8000/api/session/", {
-        credentials: "include",
-      })
-          .then((res) => res.json())
-          .then((data) => {
-            if (data.isAuthenticated) {
-              this.$store.dispatch('setAuth', true)
-
-            } else {
-              this.$store.dispatch('logout')
-              this.getCSRF()
-            }
-          })
-          .catch((err) => {
-            console.log(err)
-          })
-    }
-  }
 }
 </script>
 
