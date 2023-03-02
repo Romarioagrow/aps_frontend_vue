@@ -25,7 +25,7 @@
       <v-row>
         <v-col>
           <div>
-            <SteamBanner
+            <Banner
                 :gameUrl="'https://store.steampowered.com/app/2209980'"
                 :imageUrl="'https://cdn.akamai.steamstatic.com/steam/apps/2209980/header.jpg?t=1673372837'"
             />
@@ -37,10 +37,10 @@
 </template>
 
 <script>
-import SteamBanner from "@/components/SteamBanner.vue";
+import Banner from "@/components/RedirectBanner.vue";
 export default {
   name: "TabContent",
-  components: {SteamBanner}
+  components: {Banner}
 }
 </script>
 
