@@ -6,7 +6,7 @@
       app
       :image="require('../assets/nav-bar-background.png')"
   >
-    <v-btn :rounded="0" height="100%" color="aliceblue" @click="goToView('/')" style="font-family: 'DiscopiaRegular'; font-size: 25px; margin-right: 12%;" >
+    <v-btn :rounded="0" height="100%" color="aliceblue" @click="goToView('/')" style="font-family: 'Discopia Regular'; font-size: 25px; margin-right: 12%;" >
       APOSFERA SPACETRIPS
     </v-btn>
     <v-spacer></v-spacer>
