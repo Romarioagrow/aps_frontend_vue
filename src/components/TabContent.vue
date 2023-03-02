@@ -24,9 +24,12 @@
 
       <v-row>
         <v-col>
-          <v-btn variant="outlined">
-            Button
-          </v-btn>
+          <div>
+            <SteamBanner
+                :gameUrl="'https://store.steampowered.com/app/2209980'"
+                :imageUrl="'https://cdn.akamai.steamstatic.com/steam/apps/2209980/header.jpg?t=1673372837'"
+            />
+          </div>
         </v-col>
       </v-row>
     </v-container>
@@ -34,8 +37,10 @@
 </template>
 
 <script>
+import SteamBanner from "@/components/SteamBanner.vue";
 export default {
-  name: "TabContent"
+  name: "TabContent",
+  components: {SteamBanner}
 }
 </script>
 
