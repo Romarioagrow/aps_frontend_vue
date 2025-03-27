@@ -54,7 +54,7 @@ export default {
     return {
       menuItems: [
         { title: 'News', route: '/news', icon: 'mdi-newspaper-variant' },
-        { title: 'Market', route: '/market', icon: 'mdi-store', disabled: true },
+        { title: 'Market', route: '/market', icon: 'mdi-store' },
         { title: 'Gallery', route: '/gallery', icon: 'mdi-image-multiple' },
       ]
     }
