@@ -183,7 +183,7 @@ export default {
         {
           name: "Stellar Explorer",
           class: "Long Range Explorer",
-          image: "https://images.unsplash.com/photo-1636819488524-1f019c4e1c44?auto=format&fit=crop&w=800",
+          image: "/ships/vanguard-x171.jpg",
           description: "Advanced exploration vessel equipped for long-range missions and detailed planetary scanning.",
           stats: [
             { icon: "mdi-speedometer", label: "Speed", value: "950 c" },
@@ -194,7 +194,7 @@ export default {
         {
           name: "Nebula Hunter",
           class: "Combat Explorer",
-          image: "https://images.unsplash.com/photo-1636819488537-a9b1ffb315ce?auto=format&fit=crop&w=800",
+          image: "/ships/nova-strike.jpg",
           description: "Combat-ready exploration ship with enhanced defensive capabilities and advanced scanning systems.",
           stats: [
             { icon: "mdi-speedometer", label: "Speed", value: "850 c" },
